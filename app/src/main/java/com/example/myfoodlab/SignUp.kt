@@ -1,13 +1,21 @@
 package com.example.myfoodlab
 
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
+import android.widget.EditText
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.database.FirebaseDatabase
 
 class SignUp : AppCompatActivity() {
     /*lateinit var txtUsernameCreate: EditText
     lateinit var txtEmailCreate: EditText
     lateinit var txtPasswordCreate:EditText
-//    lateinit var buttonSubmit: ConstraintLayout
+    lateinit var layout_constraint_Submit: ConstraintLayout
 
     lateinit var email: String
     lateinit var password: String
@@ -18,20 +26,20 @@ class SignUp : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
-        //txtEmailCreate = findViewById<EditText>(R.id.txtEmailCreate)
-        //txtPasswordCreate = findViewById<EditText>(R.id.txtPasswordCreate)
-       // buttonSubmit = findViewById<ConstraintLayout>(R.id.buttonSubmit)
-        /*txtUsernameCreate = findViewById<EditText>(R.id.textInputEditText)
+        /*txtEmailCreate = findViewById<EditText>(R.id.txtEmailCreate)
+        txtPasswordCreate = findViewById<EditText>(R.id.txtPasswordCreate)
+        layout_constraint_Submit = findViewById<ConstraintLayout>(R.id.layout_constraint_Submit)
+        txtUsernameCreate = findViewById<EditText>(R.id.txtUsernameCreate)
 
 
         mAuth = FirebaseAuth.getInstance()
         database = FirebaseDatabase.getInstance()
 
 
-       /*buttonSubmit.setOnClickListener {
+        layout_constraint_Submit.setOnClickListener {
             createAccount()
 
-        }*/
+        }
     }
 
 

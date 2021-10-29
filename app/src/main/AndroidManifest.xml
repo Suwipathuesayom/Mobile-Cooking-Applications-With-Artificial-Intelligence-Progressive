@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myfoodlab">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,22 +12,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Myfoodlab">
         <activity
+            android:name=".Random"
+            android:exported="false" />
+        <activity
+            android:name=".FilterSelect"
+            android:exported="false" />
+        <activity
+            android:name=".MainMenu"
+            android:exported="true" />
+        <activity
             android:name=".ListActivity"
             android:exported="true" />
         <activity
-            android:name=".Confirmpassword"
+            android:name=".ForgotPassword"
             android:exported="true" />
         <activity
-            android:name=".Forgotpassword"
-            android:exported="true" />
-        <activity
-            android:name=".Alert_dialog"
+            android:name=".Alert_Dialog"
             android:exported="true" />
         <activity
             android:name=".Login"
             android:exported="true" />
         <activity
-
             android:name=".SignUp"
             android:exported="true"
             android:label="Signup" />

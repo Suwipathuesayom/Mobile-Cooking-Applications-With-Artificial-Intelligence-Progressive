@@ -61,7 +61,7 @@
             app:srcCompat="@drawable/logofood" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/txtSkip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="150dp"
@@ -80,7 +80,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/signupwelcome"
+        android:id="@+id/layout_constraint_SignUpWelcome"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="46dp"
@@ -125,7 +125,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textlogin"
+        android:id="@+id/txtLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
