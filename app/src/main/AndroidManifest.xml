@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Myfoodlab">
+
         <activity
             android:name=".ListActivity"
             android:exported="true" />
@@ -16,7 +17,7 @@
             android:name=".Confirmpassword"
             android:exported="true" />
         <activity
-            android:name=".Forgotpassword"
+            android:name=".ForgotPassword"
             android:exported="true" />
         <activity
             android:name=".Alert_dialog"
@@ -25,7 +26,6 @@
             android:name=".Login"
             android:exported="true" />
         <activity
-
             android:name=".SignUp"
             android:exported="true"
             android:label="Signup" />

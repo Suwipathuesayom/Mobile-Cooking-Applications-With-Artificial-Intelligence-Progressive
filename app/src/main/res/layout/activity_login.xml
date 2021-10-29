@@ -8,7 +8,7 @@
     tools:context=".SignUp">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtSkip_Login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
@@ -72,7 +72,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/textsignup"
+        android:id="@+id/txtSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -121,6 +121,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
+            app:errorEnabled="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight="64dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -128,7 +129,7 @@
             app:layout_constraintWidth="345dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/emailInputLayout"
+                android:id="@+id/txtEmailAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/background_eye"
@@ -156,6 +157,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="2dp"
             android:layout_marginEnd="32dp"
+            app:errorEnabled="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight="64dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -163,7 +165,8 @@
             app:layout_constraintWidth="345dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/passwordInputLayout"
+                android:id="@+id/txtPassword"
+                android:inputType="textPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/background_eye"
@@ -176,7 +179,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/txtForgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -191,7 +194,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout6" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout7"
+        android:id="@+id/buttonlogin"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginStart="32dp"
@@ -200,7 +203,7 @@
         android:background="@drawable/food_btnsignup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10">
+        app:layout_constraintTop_toBottomOf="@+id/txtForgotPassword">
 
         <TextView
             android:id="@+id/textView12"
@@ -225,7 +228,7 @@
         android:text="OR"
         android:textColor="#A1A4B2"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout7"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonlogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -233,7 +236,7 @@
         app:layout_constraintVertical_bias="0.856" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout10"
+        android:id="@+id/FB"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginStart="32dp"
@@ -281,7 +284,7 @@
         android:background="@drawable/button_google"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout10">
+        app:layout_constraintTop_toBottomOf="@+id/FB">
 
         <TextView
             android:id="@+id/textView41"
