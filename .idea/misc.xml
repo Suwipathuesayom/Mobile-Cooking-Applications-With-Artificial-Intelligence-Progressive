@@ -5,10 +5,13 @@
       <map>
         <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/drawable/background_alert.xml" value="0.22763157894736843" />
         <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/drawable/background_filter.xml" value="0.22763157894736843" />
+        <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/drawable/filler_backgound.xml" value="0.2222222222222222" />
         <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/drawable/search_view.xml" value="0.22467532467532467" />
+        <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/drawable/serach_view.xml" value="0.2222222222222222" />
         <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/drawable/spinner_backgound.xml" value="0.22467532467532467" />
         <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/drawable/transparent_search.xml" value="0.22467532467532467" />
         <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/layout/activity_alert_dialog.xml" value="0.2" />
+        <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/layout/activity_fillter_select.xml" value="0.264" />
         <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/layout/activity_filter_select.xml" value="0.264" />
         <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/layout/activity_forgot_password.xml" value="0.21403508771929824" />
         <entry key="..\:/Users/PERCY/Documents/GitHub/myfoodlab/app/src/main/res/layout/activity_login.xml" value="0.21403508771929824" />

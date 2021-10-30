@@ -39,8 +39,8 @@ class Login: AppCompatActivity() {
         }
         layout_constraint_Facebook = findViewById<ConstraintLayout>(R.id.layout_constraint_Facebook)
         layout_constraint_Facebook!!.setOnClickListener {
-            val gotoFilterSelect = Intent(this, FilterSelect::class.java)
-            startActivity(gotoFilterSelect)
+            val gotoFillter_Select = Intent(this, Fillter_Select::class.java)
+            startActivity(gotoFillter_Select)
         }
     }
 }

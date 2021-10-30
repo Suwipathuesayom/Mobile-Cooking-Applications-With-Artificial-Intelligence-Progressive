@@ -129,7 +129,6 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txtEmailAddress"
-                android:layout_above="@+id/txtPasswordCreate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/background_eye"
