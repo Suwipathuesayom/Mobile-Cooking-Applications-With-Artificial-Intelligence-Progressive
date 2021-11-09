@@ -59,13 +59,12 @@
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
-        android:background="@drawable/filler_backgound"
+        android:background="@drawable/transparent_search"
         android:backgroundTint="#85FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight="592dp"
@@ -74,151 +73,121 @@
         app:layout_constraintWidth="359dp">
 
         <TextView
-            android:id="@+id/txtFillter"
+            android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:fontFamily="@font/semib"
             android:text="Fillter"
             android:textColor="#3F414E"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.083"
+            app:layout_constraintHorizontal_bias="0.112"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout2"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="32dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight="48dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtFillter"
-            app:layout_constraintWidth="268dp">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/search_view"
-                android:fontFamily="@font/semib"
-                android:hint="กรุณากรอกวัตถุดิบ"
-                android:textColor="#828282"
-                android:textSize="12sp"
-                tools:ignore="TouchTargetSizeCheck" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
         <ImageView
-            android:id="@+id/imageView15"
+            android:id="@+id/imageView16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="58dp"
-            android:layout_marginEnd="8dp"
-            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="84dp"
+            android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight="20dp"
-            app:layout_constraintHorizontal_bias="0.619"
-            app:layout_constraintStart_toEndOf="@+id/textInputLayout2"
+            app:layout_constraintStart_toEndOf="@+id/textInputLayout6"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintWidth="20dp"
             app:srcCompat="@drawable/coolicon" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout3"
+            android:id="@+id/textInputLayout6"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="8dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="64dp"
             android:layout_marginEnd="32dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight="48dp"
+            app:layout_constraintHeight="52dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintWidth="268dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/search_view"
-                android:fontFamily="@font/semib"
+                android:layout_height="48dp"
+                android:background="@drawable/transparent_search"
                 android:hint="กรุณากรอกวัตถุดิบ"
                 android:textColor="#828282"
-                android:textSize="12sp"
-                tools:ignore="TouchTargetSizeCheck" />
+                android:textSize="12sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <ImageView
-            android:id="@+id/imageView19"
+            android:id="@+id/imageView17"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight="20dp"
-            app:layout_constraintHorizontal_bias="0.448"
-            app:layout_constraintStart_toEndOf="@+id/textInputLayout3"
-            app:layout_constraintTop_toBottomOf="@+id/imageView15"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toEndOf="@+id/textInputLayout7"
+            app:layout_constraintTop_toBottomOf="@+id/imageView16"
             app:layout_constraintWidth="20dp"
             app:srcCompat="@drawable/coolicon" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout4"
+            android:id="@+id/textInputLayout7"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="8dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight="48dp"
+            app:layout_constraintHeight="52dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout6"
             app:layout_constraintWidth="268dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/search_view"
-                android:fontFamily="@font/semib"
+                android:layout_height="48dp"
+                android:background="@drawable/transparent_search"
                 android:hint="กรุณากรอกวัตถุดิบ"
                 android:textColor="#828282"
-                android:textSize="12sp"
-                tools:ignore="TouchTargetSizeCheck" />
+                android:textSize="12sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <ImageView
-            android:id="@+id/imageView21"
+            android:id="@+id/imageView18"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="34dp"
-            android:layout_marginEnd="4dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight="24dp"
-            app:layout_constraintHorizontal_bias="0.52"
-            app:layout_constraintStart_toEndOf="@+id/textInputLayout4"
-            app:layout_constraintTop_toBottomOf="@+id/imageView19"
+            app:layout_constraintHorizontal_bias="0.424"
+            app:layout_constraintStart_toEndOf="@+id/textInputLayout8"
+            app:layout_constraintTop_toBottomOf="@+id/imageView17"
             app:layout_constraintWidth="24dp"
             app:srcCompat="@drawable/plus_circle" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="0dp"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="171dp"
             android:layout_marginEnd="32dp"
-            android:layout_marginBottom="171dp"
             android:background="@drawable/food_btnsignup"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHeight="48dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout8"
+            app:layout_constraintWidth="299dp">
 
             <TextView
                 android:id="@+id/txtSelect"
@@ -234,6 +203,40 @@
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout8"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight="52dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout7"
+            app:layout_constraintWidth="268dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/transparent_search"
+                android:hint="กรุณากรอกวัตถุดิบ"
+                android:textColor="#828282"
+                android:textSize="12sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

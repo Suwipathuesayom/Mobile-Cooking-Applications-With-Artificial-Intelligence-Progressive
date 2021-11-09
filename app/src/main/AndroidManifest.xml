@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Myfoodlab">
         <activity
+            android:name=".Random"
+            android:exported="false" />
+        <activity
+            android:name=".Logout"
+            android:exported="false" />
+        <activity
             android:name=".Fillter_Select"
             android:exported="false" />
         <activity

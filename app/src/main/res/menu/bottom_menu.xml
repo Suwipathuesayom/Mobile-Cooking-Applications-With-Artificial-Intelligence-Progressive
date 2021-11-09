@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/filter"
+        android:width="50dp"
+        android:height="50dp"
+        android:icon="@drawable/ic_fillter_five"
+        android:title="1234"
+        app:background="@color/yellow" />
+    <item
+        android:id="@+id/like"
+        android:width="50dp"
+        android:height="50dp"
+        android:icon="@drawable/ic_like_two"
+        android:title=""
+        app:background="@color/red" />
+    <item
+        android:id="@+id/random"
+        android:width="50dp"
+        android:height="50dp"
+        android:icon="@drawable/ic_random_four"
+        android:title=""
+        app:background="@color/orange" />
+    <item
+        android:id="@+id/profile"
+        android:width="50dp"
+        android:height="50dp"
+        android:icon="@drawable/ic_profile_one"
+        android:title=""
+        app:background="@color/dark_gray" />
+    <item
+        android:id="@+id/menu"
+        android:width="50dp"
+        android:height="50dp"
+        android:icon="@drawable/ic_menu_three"
+        android:title=""
+        app:background="@color/green" />
+</menu>

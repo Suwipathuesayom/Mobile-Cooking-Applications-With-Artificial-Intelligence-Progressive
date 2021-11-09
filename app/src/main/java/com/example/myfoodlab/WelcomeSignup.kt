@@ -5,12 +5,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
+import kotlinx.android.synthetic.main.activity_sign_up.*
 
 class WelcomeSignup : AppCompatActivity() {
 
     lateinit var layout_constraint_SignUpWelcome: ConstraintLayout
-    lateinit var txtLogin : TextView
-    lateinit var txtSkip : TextView
+    lateinit var txtLogin_Welcome : TextView
+    lateinit var txtSkip_Welcome : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,15 +25,15 @@ class WelcomeSignup : AppCompatActivity() {
         }
 
         //ปุ่ม Login TextView เข้าหน้า Login
-        txtLogin = findViewById<TextView>(R.id.txtLogin)
-        txtLogin!!.setOnClickListener{
+        txtLogin_Welcome = findViewById<TextView>(R.id.txtLogin_Welcome)
+        txtLogin_Welcome!!.setOnClickListener{
             val gotoLogin = Intent(this, Login::class.java)
             startActivity(gotoLogin)
         }
 
         // ปุ่ม Skip เข้าหน้า MainMenu
-        txtSkip = findViewById<TextView>(R.id.txtSkip)
-        txtSkip!!.setOnClickListener{
+        txtSkip_Welcome = findViewById<TextView>(R.id.txtSkip_Welcome)
+        txtSkip_Welcome!!.setOnClickListener{
             val gotoMainMenu = Intent(this, MainMenu::class.java)
             startActivity(gotoMainMenu)
         }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/mainMenu">
+
+    <activity
+        android:id="@+id/mainMenu"
+        android:name="com.example.myfoodlab.MainMenu"
+        android:label="activity_main_menu"
+        tools:layout="@layout/activity_main_menu" />
+    <activity
+        android:id="@+id/fillter_Select2"
+        android:name="com.example.myfoodlab.Fillter_Select"
+        android:label="activity_fillter_select"
+        tools:layout="@layout/activity_fillter_select" />
+</navigation>

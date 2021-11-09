@@ -111,7 +111,7 @@
         app:layout_constraintVertical_bias="0.0">
 
         <TextView
-            android:id="@+id/textView25"
+            android:id="@+id/txtLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/semib"
@@ -173,7 +173,6 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/txtEmailAddress"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -181,7 +180,6 @@
                 android:layout_marginEnd="32dp"
                 android:layout_marginBottom="126dp"
                 app:counterEnabled="true"
-                app:counterMaxLength="20"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHeight="64dp"
@@ -190,7 +188,7 @@
                 app:layout_constraintWidth="345dp">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/emailInputEditText"
+                    android:id="@+id/txtEmailCreate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/background_eye"
@@ -211,7 +209,6 @@
                 app:layout_constraintVertical_bias="0.0">
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/txtPasswordCreate"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -229,7 +226,8 @@
                     app:layout_constraintWidth="345dp">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/passwordInputEditText"
+                        android:id="@+id/txtPasswordCreatet"
+                        android:inputType="textPassword"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/background_eye"
