@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">myfoodlab</string>
     <string name="defult_web_client_id" translatable="false">859988268842-rv2lhngk00hovu3kanf6v940baq3aekl.apps.googleusercontent.com</string>
+    <string name="error">#E8453C</string>
 </resources>
