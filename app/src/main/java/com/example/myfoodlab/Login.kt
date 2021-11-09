@@ -27,12 +27,10 @@ class Login : AppCompatActivity() {
     lateinit var email: String
     lateinit var password: String
     lateinit var txtForgotPassword: TextView
+    lateinit var txtSkip_Login: TextView
     //lateinit var FB: ConstraintLayout
 
     private lateinit var mAuth: FirebaseAuth
-
-
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,26 +40,26 @@ class Login : AppCompatActivity() {
 
         txtEmailAddress = findViewById<EditText>(R.id.txtEmailAddress)
         txtPassword = findViewById<EditText>(R.id.txtPassword)
-        buttonlogin = findViewById <ConstraintLayout>(R.id.buttonlogin)
+        buttonlogin = findViewById<ConstraintLayout>(R.id.buttonlogin)
         txtSignUp = findViewById<TextView>(R.id.txtSignUp)
-        txtForgotPassword =  findViewById<TextView>(R.id.txtForgotPassword)
+        txtForgotPassword = findViewById<TextView>(R.id.txtForgotPassword)
+        //txtSkip_Login = findViewById<TextView>(R.id.txtSkip_Login)
         //FB = findViewById<ConstraintLayout>(R.id.FB)
 
         mAuth = FirebaseAuth.getInstance()
 
 
-
         //เปลี่ยนหน้าไปหน้าสมัคร
         txtSignUp!!.setOnClickListener {
 
-            val intent = Intent(this,SignUp::class.java)
+            val intent = Intent(this, SignUp::class.java)
             startActivity(intent)
         }
 
 
 
-        txtForgotPassword!!.setOnClickListener{
-            val gotoForget = Intent(this,ForgotPassword::class.java)
+        txtForgotPassword!!.setOnClickListener {
+            val gotoForget = Intent(this, ForgotPassword::class.java)
             startActivity(gotoForget)
         }
 
@@ -69,14 +67,20 @@ class Login : AppCompatActivity() {
             validateData()
         }
 
-       /* FB!!.setOnClickListener{
-            val gotoAlert_dialog = Intent(this, Alert_dialog::class.java)
-             startActivity(gotoAlert_dialog)
+
+        /*txtSkip_Login!!.setOnClickListener {
+            val gotoCardMenu = Intent(this,CardMenu::class.java)
+            startActivity(gotoCardMenu)
         }*/
+
+        /* FB!!.setOnClickListener{
+                val gotoAlert_dialog = Intent(this, Alert_dialog::class.java)
+                 startActivity(gotoAlert_dialog)
+            }*/
 
     }
 
-    override fun onStart(){
+    override fun onStart() {
         super.onStart()
         val currentUser = mAuth!!.currentUser
         updateUI(currentUser)
@@ -91,15 +95,13 @@ class Login : AppCompatActivity() {
         password = binding.txtPassword.text.toString().trim()
 
         //validate data
-        if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+        if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             //invalid email format
             binding.txtEmailAddress.error = "Invalid email format"
-        }
-        else if (TextUtils.isEmpty(password)){
+        } else if (TextUtils.isEmpty(password)) {
             //no password entered
             binding.txtPassword.error = "Please enter password"
-        }
-        else{
+        } else {
             //data is validate, begin login
             loginEmail()
 
@@ -112,18 +114,17 @@ class Login : AppCompatActivity() {
         email = txtEmailAddress!!.text.toString()
         password = txtPassword!!.text.toString()
 
-        mAuth!!.signInWithEmailAndPassword(email, password).addOnCompleteListener(this) {
-                task -> if (task.isSuccessful){
-            Log.d("My App","Create New User Success!")
-            val user = mAuth!!.currentUser
-            updateUI(user)
-        }
-        else{
-            binding.txtPassword.error = "Invalid password format"
-            Log.w("MyApp","Failure Process!",task.exception)
-            Toast.makeText(this@Login,"Authentication Failed.", Toast.LENGTH_SHORT).show()
-            updateUI(null)
-        }
+        mAuth!!.signInWithEmailAndPassword(email, password).addOnCompleteListener(this) { task ->
+            if (task.isSuccessful) {
+                Log.d("My App", "Create New User Success!")
+                val user = mAuth!!.currentUser
+                updateUI(user)
+            } else {
+                binding.txtPassword.error = "Invalid password format"
+                Log.w("MyApp", "Failure Process!", task.exception)
+                Toast.makeText(this@Login, "Authentication Failed.", Toast.LENGTH_SHORT).show()
+                updateUI(null)
+            }
 
         }
 
@@ -131,10 +132,11 @@ class Login : AppCompatActivity() {
     }
 
     private fun updateUI(user: FirebaseUser?) {
-        if (user != null){
+        if (user != null) {
             val uid = user.uid
             val email = user.email
-            Toast.makeText(this@Login,"Welcome: $email your ID is: $uid", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@Login, "Welcome: $email your ID is: $uid", Toast.LENGTH_SHORT)
+                .show()
             val intenSession = Intent(this, ListActivity::class.java)
             startActivity(intenSession)
         }

@@ -10,8 +10,8 @@ import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_sign_up.*
 
 class ForgotPassword : AppCompatActivity() {
-    lateinit var txtEmailForget:EditText
-    lateinit var buttonReset : ConstraintLayout
+    lateinit var txtEmailForget: EditText
+    lateinit var buttonReset: ConstraintLayout
     lateinit var mAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,26 +24,33 @@ class ForgotPassword : AppCompatActivity() {
 
         buttonReset!!.setOnClickListener {
             var email = txtEmailForget.text.toString()
-            if(TextUtils.isEmpty(email)){
+            if (TextUtils.isEmpty(email)) {
                 txtEmailForget.error = "Please Enter your Email"
-                Toast.makeText(applicationContext,"Please Enter your Email",Toast.LENGTH_SHORT).show()
-            }else{
-                mAuth!!.sendPasswordResetEmail(email).addOnCompleteListener{
-                        task -> if (task.isSuccessful) {
-                    txtEmailForget.error = "Please Check your Email"
-                    Toast.makeText(this@ForgotPassword,"Please Check your Email",Toast.LENGTH_SHORT).show()
+                Toast.makeText(applicationContext, "Please Enter your Email", Toast.LENGTH_SHORT)
+                    .show()
+            } else {
+                mAuth!!.sendPasswordResetEmail(email).addOnCompleteListener { task ->
+                    if (task.isSuccessful) {
+                        Toast.makeText(
+                            this@ForgotPassword,
+                            "Please Check your Email",
+                            Toast.LENGTH_SHORT
+                        ).show()
 
-                }else{
-                    txtEmailForget.error = "Fail to send reset password email"
-                    Toast.makeText(this@ForgotPassword,"Fail to send reset password email",Toast.LENGTH_SHORT).show()
+                    } else {
+                        txtEmailForget.error = "Fail to send reset password email"
+                        Toast.makeText(
+                            this@ForgotPassword,
+                            "Fail to send reset password email",
+                            Toast.LENGTH_SHORT
+                        ).show()
 
-                }
+                    }
 
 
                 }
 
             }
-
 
 
         }

@@ -7,13 +7,18 @@
         <entry key="..\:/Users/ACER NITRO5/AndroidStudioProjects/myfoodlab/app/src/main/res/drawable/background_eye.xml" value="0.2703125" />
         <entry key="..\:/Users/ACER NITRO5/AndroidStudioProjects/myfoodlab/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
         <entry key="..\:/Users/ACER NITRO5/AndroidStudioProjects/myfoodlab/app/src/main/res/layout/activity_alert_dialog.xml" value="0.4" />
+        <entry key="..\:/Users/ACER NITRO5/AndroidStudioProjects/myfoodlab/app/src/main/res/layout/activity_card_menu.xml" value="0.2368659420289855" />
         <entry key="..\:/Users/ACER NITRO5/AndroidStudioProjects/myfoodlab/app/src/main/res/layout/activity_confirmpassword.xml" value="0.2" />
         <entry key="..\:/Users/ACER NITRO5/AndroidStudioProjects/myfoodlab/app/src/main/res/layout/activity_forgotpassword.xml" value="0.2" />
+        <entry key="..\:/Users/ACER NITRO5/AndroidStudioProjects/myfoodlab/app/src/main/res/layout/activity_list.xml" value="0.23867753623188406" />
         <entry key="..\:/Users/ACER NITRO5/AndroidStudioProjects/myfoodlab/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Users/ACER NITRO5/AndroidStudioProjects/myfoodlab/app/src/main/res/layout/activity_main.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/ACER NITRO5/AndroidStudioProjects/myfoodlab/app/src/main/res/layout/activity_main2.xml" value="0.223731884057971" />
+        <entry key="..\:/Users/ACER NITRO5/AndroidStudioProjects/myfoodlab/app/src/main/res/layout/activity_my_adapter.xml" value="0.2368659420289855" />
         <entry key="..\:/Users/ACER NITRO5/AndroidStudioProjects/myfoodlab/app/src/main/res/layout/activity_sign_up.xml" value="0.264" />
         <entry key="..\:/Users/ACER NITRO5/AndroidStudioProjects/myfoodlab/app/src/main/res/layout/activity_welcome_signup.xml" value="0.2" />
+        <entry key="..\:/Users/ACER NITRO5/AndroidStudioProjects/myfoodlab/app/src/main/res/layout/itemhorizontal.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/ACER NITRO5/AndroidStudioProjects/myfoodlab/app/src/main/res/layout/row.xml" value="0.2368659420289855" />
         <entry key="..\:/Users/ACER NITRO5/AndroidStudioProjects/myfoodlab/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.13645833333333332" />
         <entry key="..\:/myfoodlab/app/src/main/res/drawable-ldpi/button_signup.xml" value="0.22763157894736843" />
         <entry key="..\:/myfoodlab/app/src/main/res/drawable-v24/button_facebook.xml" value="0.22763157894736843" />
