@@ -19,14 +19,14 @@ class WelcomeSignup : AppCompatActivity() {
 
         //ปุ่ม SignUp เข้าหน้า SignUp
         layout_constraint_SignUpWelcome = findViewById<ConstraintLayout>(R.id.layout_constraint_SignUpWelcome)
-        layout_constraint_SignUpWelcome!!.setOnClickListener {
+        layout_constraint_SignUpWelcome.setOnClickListener {
             val gotoSignup = Intent(this, SignUp::class.java)
             startActivity(gotoSignup)
         }
 
         //ปุ่ม Login TextView เข้าหน้า Login
         txtLogin = findViewById<TextView>(R.id.txtLogin)
-        txtLogin!!.setOnClickListener{
+        txtLogin.setOnClickListener{
             val gotoLogin = Intent(this, Login::class.java)
             startActivity(gotoLogin)
         }

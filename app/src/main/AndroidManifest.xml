@@ -9,9 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Myfoodlab">
+        <activity
+            android:name=".DetailActivity"
+            android:exported="false" />
+
         <meta-data
             android:name="com.google.android.gms.ads.AD_MANAGER_APP"
-            android:value="true"/>
+            android:value="true" />
+
         <activity
             android:name=".ListActivity"
             android:exported="true" />

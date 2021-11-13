@@ -31,11 +31,11 @@ class ListActivity : AppCompatActivity() {
         //ส่วนของ FirebaseAuth
         mAuth = FirebaseAuth.getInstance()
         //ส่วนของ FirebaseDatabase
-        database =
-            FirebaseDatabase.getInstance("https://foodapp-f4fe4-default-rtdb.asia-southeast1.firebasedatabase.app/")
+        database = FirebaseDatabase.getInstance("https://foodapp-f4fe4-default-rtdb.asia-southeast1.firebasedatabase.app/")
 
-        recyclerViewCard.layoutManager =
-            LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+
+       //การ์ด
+        recyclerViewCard.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         databaseReferenceCard = database.getReference("Card/")
         responseCard = mutableListOf()
         cardAdapter = CardAdapter(responseCard as ArrayList<CardModel>)
