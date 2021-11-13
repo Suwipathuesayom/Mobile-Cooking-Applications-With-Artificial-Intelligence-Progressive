@@ -21,7 +21,7 @@
             android:name=".ListActivity"
             android:exported="true" />
         <activity
-            android:name=".Confirmpassword"
+            android:name=".ConfirmPassword"
             android:exported="true" />
         <activity
             android:name=".ForgotPassword"
