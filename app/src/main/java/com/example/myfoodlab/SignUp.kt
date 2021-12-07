@@ -16,15 +16,16 @@ import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.FirebaseDatabase
 
 class SignUp : AppCompatActivity() {
-    private lateinit var binding: ActivitySignUpBinding
-    lateinit var txtEmailCreate: EditText
-    lateinit var txtPasswordCreate: EditText
-    lateinit var txtUsernameCreate: EditText
-    lateinit var layout_constraint_Submit: ConstraintLayout
+    private lateinit var binding : ActivitySignUpBinding
+    lateinit var txtEmailCreate : EditText
+    lateinit var txtPasswordCreate : EditText
+    lateinit var txtUsernameCreate : EditText
+    lateinit var layout_constraint_Submit : ConstraintLayout
     lateinit var txtLogin : TextView
     lateinit var email: String
     lateinit var password: String
-    lateinit var username:String
+    lateinit var username : String
+    lateinit var txtSkip_SignUp : TextView
 
     lateinit var mAuth: FirebaseAuth
     private lateinit var database: FirebaseDatabase
@@ -39,12 +40,15 @@ class SignUp : AppCompatActivity() {
         layout_constraint_Submit = findViewById<ConstraintLayout>(R.id.layout_constraint_Submit)
         txtUsernameCreate = findViewById<EditText>(R.id.txtUsernameCreate)
         txtLogin = findViewById<TextView>(R.id.txtLogin)
+        txtSkip_SignUp = findViewById<TextView>(R.id.txtSkip_SignUp)
 
         mAuth = FirebaseAuth.getInstance()
         database = FirebaseDatabase.getInstance("https://foodapp-f4fe4-default-rtdb.asia-southeast1.firebasedatabase.app")
 
 
         layout_constraint_Submit.setOnClickListener {
+            /*val gotoMainMenu = Intent(this, Alert_Dialog::class.java)
+            startActivity(gotoMainMenu)*/
             validateData()
 
         }
@@ -52,6 +56,11 @@ class SignUp : AppCompatActivity() {
         txtLogin.setOnClickListener{
             val gotoLogin = Intent(this,Login::class.java)
             startActivity(gotoLogin)
+        }
+
+        txtSkip_SignUp.setOnClickListener {
+            val gotoMainMenu = Intent(this,MainMenu::class.java)
+            startActivity(gotoMainMenu)
         }
 
 
@@ -87,9 +96,11 @@ class SignUp : AppCompatActivity() {
             //no password entered
             binding.txtPasswordCreatet.error = "Please enter password"
         }
+
         else{
             //data is validate, begin login
             createAccount()
+
 
         }
 
@@ -98,16 +109,16 @@ class SignUp : AppCompatActivity() {
 
 
 
-    private fun createAccount() {
-        email = txtEmailCreate!!.text.toString()
-        password = txtPasswordCreate!!.text.toString()
+   private fun createAccount() {
+        email = txtEmailCreate.text.toString()
+        password = txtPasswordCreate.text.toString()
         mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(this) {
                 task -> if (task.isSuccessful){
             Log.d("My App","Create New User Success!")
             val user = mAuth.currentUser
             val databaseReference = database.reference.child("users").push()
-            databaseReference.child("uid").setValue(user!!.uid)
-            databaseReference.child("Email").setValue(user.email)
+            databaseReference.child("uid").setValue(user?.uid)
+            databaseReference.child("Email").setValue(user?.email)
             databaseReference.child("Username").setValue(txtUsernameCreate.text.toString())
             updateUI(user)
         }
@@ -128,8 +139,8 @@ class SignUp : AppCompatActivity() {
             val uid = user.uid
             val email = user.email
             Toast.makeText(this@SignUp,"Welcome: $email your ID is: $uid", Toast.LENGTH_SHORT).show()
-            val intenSession = Intent(this, ListActivity::class.java)
-            startActivity(intenSession)
+            val gotoMainMenu = Intent(this, MainMenu::class.java)
+            startActivity(gotoMainMenu)
         }
     }
 

@@ -6,13 +6,13 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_foodlab"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_foodlab"
         android:supportsRtl="true"
         android:theme="@style/Theme.Myfoodlab">
         <activity
-            android:name=".Random"
+            android:name=".Test"
             android:exported="false" />
         <activity
             android:name=".Logout"

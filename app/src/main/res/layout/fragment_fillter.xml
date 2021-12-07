@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_mainmenu"
-    tools:context=".Fillter_Select">
+    tools:context=".FillterFragment">
 
-    <ImageView
-        android:id="@+id/imageView13"
+
+<!--    <ImageView
+        android:id="@+id/imageView15"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginStart="8dp"
@@ -21,7 +22,7 @@
         app:srcCompat="@drawable/scan" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textView51"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -37,17 +38,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/linearLayout_search_fillter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="114dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/textView51">
 
         <SearchView
             android:layout_width="match_parent"
@@ -55,21 +55,24 @@
             android:background="@drawable/search_view"
             android:iconifiedByDefault="false"
             android:queryBackground="@drawable/transparent_search"
-            android:queryHint="What you wanna eat today ?.." />
+            android:queryHint="What you wanna eat today ?..">
+
+        </SearchView>
+
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/transparent_search"
         android:backgroundTint="#85FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight="592dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_search_fillter"
         app:layout_constraintWidth="359dp">
 
         <TextView
@@ -87,7 +90,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView16"
+            android:id="@+id/close"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -114,6 +117,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintWidth="268dp">
 
+
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
@@ -124,7 +128,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <ImageView
-            android:id="@+id/imageView17"
+            android:id="@+id/delete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -134,7 +138,7 @@
             app:layout_constraintHeight="20dp"
             app:layout_constraintHorizontal_bias="0.461"
             app:layout_constraintStart_toEndOf="@+id/textInputLayout7"
-            app:layout_constraintTop_toBottomOf="@+id/imageView16"
+            app:layout_constraintTop_toBottomOf="@+id/close"
             app:layout_constraintWidth="20dp"
             app:srcCompat="@drawable/coolicon" />
 
@@ -162,7 +166,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <ImageView
-            android:id="@+id/imageView18"
+            android:id="@+id/add"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -172,31 +176,43 @@
             app:layout_constraintHeight="24dp"
             app:layout_constraintHorizontal_bias="0.424"
             app:layout_constraintStart_toEndOf="@+id/textInputLayout8"
-            app:layout_constraintTop_toBottomOf="@+id/imageView17"
+            app:layout_constraintTop_toBottomOf="@+id/delete"
             app:layout_constraintWidth="24dp"
             app:srcCompat="@drawable/plus_circle" />
 
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:choiceMode="multipleChoice"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="50dp"
             android:layout_marginStart="32dp"
+            android:layout_marginTop="150dp"
             android:layout_marginEnd="32dp"
+            android:layout_marginBottom="150dp"
             android:background="@drawable/food_btnsignup"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight="48dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout8"
-            app:layout_constraintWidth="299dp">
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout8">
 
             <TextView
                 android:id="@+id/txtSelect"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Select"
                 android:fontFamily="@font/semib"
-                android:textSize="16sp"
+                android:text="Select"
                 android:textColor="#FFFFFF"
+                android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -227,16 +243,5 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#fff"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_menu" />
-
+    </androidx.constraintlayout.widget.ConstraintLayout>-->
 </androidx.constraintlayout.widget.ConstraintLayout>
