@@ -3,16 +3,60 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_nav"
-    app:startDestination="@id/mainMenu">
-
-    <activity
-        android:id="@+id/mainMenu"
-        android:name="com.example.myfoodlab.MainMenu"
-        android:label="activity_main_menu"
-        tools:layout="@layout/activity_main_menu" />
-    <activity
-        android:id="@+id/fillter_Select2"
-        android:name="com.example.myfoodlab.Fillter_Select"
-        android:label="activity_fillter_select"
-        tools:layout="@layout/activity_fillter_select" />
+    app:startDestination="@id/filtlterFragment">
+    <fragment
+        android:id="@+id/filtlterFragment"
+        android:name="com.example.myfoodlab.ui.fillter.filtlterFragment"
+        android:label="fragment_filtlter"
+        tools:layout="@layout/fragment_filtlter" />
+    <fragment
+        android:id="@+id/homeMenuFragment"
+        android:name="com.example.myfoodlab.ui.home.homeMenuFragment"
+        android:label="fragment_home_menu"
+        tools:layout="@layout/fragment_home_menu" />
+    <fragment
+        android:id="@+id/likeFragment"
+        android:name="com.example.myfoodlab.ui.like.likeFragment"
+        android:label="fragment_like"
+        tools:layout="@layout/fragment_like" />
+    <fragment
+        android:id="@+id/logoutFragment"
+        android:name="com.example.myfoodlab.ui.logout.logoutFragment"
+        android:label="fragment_logout2"
+        tools:layout="@layout/fragment_logout2" />
+    <fragment
+        android:id="@+id/randomFragment"
+        android:name="com.example.myfoodlab.ui.random.randomFragment"
+        android:label="fragment_random2"
+        tools:layout="@layout/fragment_random2" />
+    <fragment
+        android:id="@+id/forgotFragment"
+        android:name="com.example.myfoodlab.ui.Forgot.forgotFragment"
+        android:label="fragment_forgot"
+        tools:layout="@layout/fragment_forgot" />
+    <fragment
+        android:id="@+id/listActivityFragment"
+        android:name="com.example.myfoodlab.ui.ListActivity.ListActivityFragment"
+        android:label="fragment_list_activity"
+        tools:layout="@layout/fragment_list_activity" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.myfoodlab.ui.Login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.myfoodlab.ui.SignUp.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
+    <fragment
+        android:id="@+id/testFragment"
+        android:name="com.example.myfoodlab.ui.Test.TestFragment"
+        android:label="fragment_test"
+        tools:layout="@layout/fragment_test" />
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.myfoodlab.ui.WelcomeSignup.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" />
 </navigation>

@@ -5,18 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_mainmenu"
-    tools:context=".RandomFragment">
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        app:elevation="2dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:menu="@menu/bottom_menu"
-        tools:ignore="MissingConstraints"
-        android:id="@+id/bottom_navigation"/>
-
+    tools:context=".ui.random.randomFragment">
 
     <ImageView
         android:id="@+id/imageView6"
@@ -24,7 +13,6 @@
         android:layout_height="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
-        android:src="@drawable/scan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         />
