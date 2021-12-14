@@ -34,8 +34,8 @@ class WelcomeSignup : AppCompatActivity() {
         // ปุ่ม Skip เข้าหน้า MainMenu
         txtSkip_Welcome = findViewById<TextView>(R.id.txtSkip_Welcome)
         txtSkip_Welcome!!.setOnClickListener{
-            val gotoMainMenu = Intent(this, MainMenu::class.java)
-            startActivity(gotoMainMenu)
+            val gotoMenuFragment = Intent(this, MenuFragment::class.java)
+            startActivity(gotoMenuFragment)
         }
 
     }
