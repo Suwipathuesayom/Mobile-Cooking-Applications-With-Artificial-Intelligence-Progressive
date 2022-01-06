@@ -1,0 +1,913 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_mainmenu"
+    tools:context=".ui.japan.JapanFoodFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/scan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView82"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/semib"
+        android:text="Hello, Jeev jobs"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.167"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_search_japanfood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView82">
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/search_view"
+            android:iconifiedByDefault="false"
+            android:queryBackground="@drawable/transparent_search"
+            android:queryHint="What you wanna eat today ?..">
+
+        </SearchView>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/transparent_search"
+        android:backgroundTint="#85FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight="592dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_search_japanfood"
+        app:layout_constraintWidth="359dp">
+
+        <androidx.core.widget.NestedScrollView
+            orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:overScrollMode="never"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView146"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/semib"
+                    android:text="Japan Food"
+                    android:textColor="#3F414E"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/steamedeggs"
+                    android:layout_width="300dp"
+                    android:layout_height="175dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:backgroundTint="#FFFFFF"
+                    app:cardCornerRadius="17dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView146">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout4"
+                            android:layout_width="79dp"
+                            android:layout_height="5dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/button_facebook"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView160" />
+
+                        <TextView
+                            android:id="@+id/textView160"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/poppinslight"
+                            android:text="ไข่ตุ๋นญี่ปุ่น"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView172"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Calories"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
+                        <TextView
+                            android:id="@+id/textView173"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/regular"
+                            android:text="180 kcal"
+                            android:textColor="#4F4F4F"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView172"
+                            app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
+                        <TextView
+                            android:id="@+id/textView174"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Ingredient "
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView172" />
+
+                        <TextView
+                            android:id="@+id/textView175"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/regular"
+                            android:text="10"
+                            android:textColor="#4F4F4F"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView174"
+                            app:layout_constraintTop_toBottomOf="@+id/textView173" />
+
+                        <TextView
+                            android:id="@+id/textView176"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Howto"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView174" />
+
+                        <TextView
+                            android:id="@+id/textView177"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/regular"
+                            android:text="ทำน้ำซุปสำหรับผสมกับไข่โดยผสมโชยุ ผงดาชิ"
+                            android:textColor="#4F4F4F"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView176"
+                            app:layout_constraintTop_toBottomOf="@+id/textView175" />
+
+                        <TextView
+                            android:id="@+id/textView178"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:fontFamily="@font/regular"
+                            android:text="เกลือ และน้ำเปล่า แล้วคนผสมให้เข้ากัน"
+                            android:textColor="#4F4F4F"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView176"
+                            app:layout_constraintTop_toBottomOf="@+id/textView177" />
+
+                        <TextView
+                            android:id="@+id/textView179"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="48dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Read More"
+                            android:textColor="#828282"
+                            android:textSize="8sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView178" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="92dp"
+                    android:layout_height="92dp"
+                    android:layout_marginBottom="100dp"
+                    app:cardCornerRadius="17dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/steamedeggs"
+                    app:layout_constraintEnd_toEndOf="@+id/steamedeggs">
+
+                    <ImageView
+                        android:id="@+id/imageView25"
+                        android:layout_width="92dp"
+                        android:layout_height="92dp"
+                        android:src="@drawable/steamedeggs" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/sukiyaki"
+                    android:layout_width="300dp"
+                    android:layout_height="175dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="32dp"
+                    android:backgroundTint="#FFFFFF"
+                    app:cardCornerRadius="17dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/steamedeggs">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout5"
+                            android:layout_width="79dp"
+                            android:layout_height="5dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/button_facebook"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView180" />
+
+                        <TextView
+                            android:id="@+id/textView180"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/poppinslight"
+                            android:text="สุกี้ยากี้น้ำดำ"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView181"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Calories"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+
+                        <TextView
+                            android:id="@+id/textView182"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/regular"
+                            android:text="625 kcal"
+                            android:textColor="#4F4F4F"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView181"
+                            app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+
+                        <TextView
+                            android:id="@+id/textView183"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Ingredient "
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView181" />
+
+                        <TextView
+                            android:id="@+id/textView184"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/regular"
+                            android:text="12"
+                            android:textColor="#4F4F4F"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView183"
+                            app:layout_constraintTop_toBottomOf="@+id/textView182" />
+
+                        <TextView
+                            android:id="@+id/textView185"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Howto"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView183" />
+
+                        <TextView
+                            android:id="@+id/textView186"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/regular"
+                            android:text="เท คิคโคแมน ซอสถั่วเหลือง (โชยุ) และ คิคโคแมน"
+                            android:textColor="#4F4F4F"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView185"
+                            app:layout_constraintTop_toBottomOf="@+id/textView184" />
+
+                        <TextView
+                            android:id="@+id/textView187"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:fontFamily="@font/regular"
+                            android:text=" อะยิ-มิริน และสาเกลงในชามผสม"
+                            android:textColor="#4F4F4F"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView185"
+                            app:layout_constraintTop_toBottomOf="@+id/textView186" />
+
+                        <TextView
+                            android:id="@+id/textView188"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="48dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Read More"
+                            android:textColor="#828282"
+                            android:textSize="8sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView187" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="92dp"
+                    android:layout_height="92dp"
+                    android:layout_marginBottom="100dp"
+                    app:cardCornerRadius="17dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/sukiyaki"
+                    app:layout_constraintEnd_toEndOf="@+id/sukiyaki">
+
+                    <ImageView
+                        android:id="@+id/imageView27"
+                        android:layout_width="92dp"
+                        android:layout_height="92dp"
+                        android:src="@drawable/sukiyaki" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/yoshinoyagyudon"
+                    android:layout_width="300dp"
+                    android:layout_height="175dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="32dp"
+                    android:backgroundTint="#FFFFFF"
+                    app:cardCornerRadius="17dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sukiyaki">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout6"
+                            android:layout_width="79dp"
+                            android:layout_height="5dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/button_facebook"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView189" />
+
+                        <TextView
+                            android:id="@+id/textView189"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/poppinslight"
+                            android:text="ข้าวหน้าเนื้อ"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView190"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Calories"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/constraintLayout6" />
+
+                        <TextView
+                            android:id="@+id/textView191"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/regular"
+                            android:text="720 kcal"
+                            android:textColor="#4F4F4F"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView190"
+                            app:layout_constraintTop_toBottomOf="@+id/constraintLayout6" />
+
+                        <TextView
+                            android:id="@+id/textView192"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Ingredient "
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView190" />
+
+                        <TextView
+                            android:id="@+id/textView193"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/regular"
+                            android:text="11"
+                            android:textColor="#4F4F4F"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView192"
+                            app:layout_constraintTop_toBottomOf="@+id/textView191" />
+
+                        <TextView
+                            android:id="@+id/textView194"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Howto"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView192" />
+
+                        <TextView
+                            android:id="@+id/textView195"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/regular"
+                            android:text="นำขิงบด น้ำตาลทราย ผงดาชิ สาเก มิริน โชวยุ และ"
+                            android:textColor="#4F4F4F"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView194"
+                            app:layout_constraintTop_toBottomOf="@+id/textView193" />
+
+                        <TextView
+                            android:id="@+id/textView196"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:fontFamily="@font/regular"
+                            android:text="น้ำเปล่า มาเทรวมกันไว้ในถ้วย คนผสมให้เข้ากัน"
+                            android:textColor="#4F4F4F"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView194"
+                            app:layout_constraintTop_toBottomOf="@+id/textView195" />
+
+                        <TextView
+                            android:id="@+id/textView197"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="48dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Read More"
+                            android:textColor="#828282"
+                            android:textSize="8sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView196" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="92dp"
+                    android:layout_height="92dp"
+                    android:layout_marginBottom="100dp"
+                    app:cardCornerRadius="17dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/yoshinoyagyudon"
+                    app:layout_constraintEnd_toEndOf="@+id/yoshinoyagyudon">
+
+                    <ImageView
+                        android:id="@+id/imageView28"
+                        android:layout_width="92dp"
+                        android:layout_height="92dp"
+                        android:src="@drawable/yoshinoyagyudon" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/okonomiyaki"
+                    android:layout_width="300dp"
+                    android:layout_height="175dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="32dp"
+                    android:backgroundTint="#FFFFFF"
+                    app:cardCornerRadius="17dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/yoshinoyagyudon">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout7"
+                            android:layout_width="79dp"
+                            android:layout_height="5dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/button_facebook"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView198" />
+
+                        <TextView
+                            android:id="@+id/textView198"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/poppinslight"
+                            android:text="โอโคโนมิยากิ"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView199"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Calories"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/constraintLayout7" />
+
+                        <TextView
+                            android:id="@+id/textView200"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/regular"
+                            android:text="360 kcal"
+                            android:textColor="#4F4F4F"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView199"
+                            app:layout_constraintTop_toBottomOf="@+id/constraintLayout7" />
+
+                        <TextView
+                            android:id="@+id/textView201"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Ingredient "
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView199" />
+
+                        <TextView
+                            android:id="@+id/textView202"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/regular"
+                            android:text="9"
+                            android:textColor="#4F4F4F"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView201"
+                            app:layout_constraintTop_toBottomOf="@+id/textView200" />
+
+                        <TextView
+                            android:id="@+id/textView203"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Howto"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView201" />
+
+                        <TextView
+                            android:id="@+id/textView204"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="38dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/regular"
+                            android:text="เริ่มต้นด้วยการผสมแป้งกันก่อนเลย ถ้าใช้ซุปผง"
+                            android:textColor="#4F4F4F"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView203"
+                            app:layout_constraintTop_toBottomOf="@+id/textView202" />
+
+                        <TextView
+                            android:id="@+id/textView205"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="38dp"
+                            android:fontFamily="@font/regular"
+                            android:text="แบบเราให้นำผงซุปมาผสมกับน้ำอุ่นก่อน"
+                            android:textColor="#4F4F4F"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView203"
+                            app:layout_constraintTop_toBottomOf="@+id/textView204" />
+
+                        <TextView
+                            android:id="@+id/textView206"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="48dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Read More"
+                            android:textColor="#828282"
+                            android:textSize="8sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView205" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="92dp"
+                    android:layout_height="92dp"
+                    android:layout_marginBottom="100dp"
+                    app:cardCornerRadius="17dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/okonomiyaki"
+                    app:layout_constraintEnd_toEndOf="@+id/okonomiyaki">
+
+                    <ImageView
+                        android:id="@+id/imageView31"
+                        android:layout_width="92dp"
+                        android:layout_height="92dp"
+                        android:src="@drawable/okonomiyaki" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/yakisoba"
+                    android:layout_width="300dp"
+                    android:layout_height="175dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="32dp"
+                    android:backgroundTint="#FFFFFF"
+                    app:cardCornerRadius="17dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/okonomiyaki">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout8"
+                            android:layout_width="79dp"
+                            android:layout_height="5dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/button_facebook"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView207" />
+
+                        <TextView
+                            android:id="@+id/textView207"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/poppinslight"
+                            android:text="ยากิโซบะ"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView208"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Calories"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/constraintLayout8" />
+
+                        <TextView
+                            android:id="@+id/textView209"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/regular"
+                            android:text=" 527 kcal"
+                            android:textColor="#4F4F4F"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView208"
+                            app:layout_constraintTop_toBottomOf="@+id/constraintLayout8" />
+
+                        <TextView
+                            android:id="@+id/textView210"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Ingredient "
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView208" />
+
+                        <TextView
+                            android:id="@+id/textView211"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/regular"
+                            android:text="11"
+                            android:textColor="#4F4F4F"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView210"
+                            app:layout_constraintTop_toBottomOf="@+id/textView209" />
+
+                        <TextView
+                            android:id="@+id/textView212"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Howto"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView210" />
+
+                        <TextView
+                            android:id="@+id/textView213"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="28dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/regular"
+                            android:text="นำเส้นยากิโซบะสดมาลวกจนสุกดีจากนั้นนำไปล้าง"
+                            android:textColor="#4F4F4F"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView212"
+                            app:layout_constraintTop_toBottomOf="@+id/textView211" />
+
+                        <TextView
+                            android:id="@+id/textView214"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="28dp"
+                            android:fontFamily="@font/regular"
+                            android:text="น้ำ และไปน็อคในน้ำเย็นจัดจากนั้นนำขึ้นมาใส่น้ำมัน"
+                            android:textColor="#4F4F4F"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView212"
+                            app:layout_constraintTop_toBottomOf="@+id/textView213" />
+
+                        <TextView
+                            android:id="@+id/textView215"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="48dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Read More"
+                            android:textColor="#828282"
+                            android:textSize="8sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView214" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="92dp"
+                    android:layout_height="92dp"
+                    android:layout_marginBottom="100dp"
+                    app:cardCornerRadius="17dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/yakisoba"
+                    app:layout_constraintEnd_toEndOf="@+id/yakisoba">
+
+                    <ImageView
+                        android:id="@+id/imageView33"
+                        android:layout_width="92dp"
+                        android:layout_height="92dp"
+                        android:src="@drawable/yakisoba" />
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

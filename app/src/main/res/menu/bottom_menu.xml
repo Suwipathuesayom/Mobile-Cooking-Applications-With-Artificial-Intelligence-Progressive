@@ -24,13 +24,6 @@
         android:title="Menu"
         android:background="#64D393" />
     <item
-        android:id="@+id/like"
-        android:width="50dp"
-        android:height="50dp"
-        android:icon="@drawable/ic_heart_name"
-        android:title="Liked"
-        android:background="#FF5B5B"/>
-    <item
         android:id="@+id/profile"
         android:width="50dp"
         android:height="50dp"

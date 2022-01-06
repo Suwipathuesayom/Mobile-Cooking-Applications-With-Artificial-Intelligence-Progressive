@@ -1,5 +1,6 @@
 package com.example.myfoodlab
 
+import android.app.ListActivity
 import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
@@ -14,6 +15,7 @@ import com.example.myfoodlab.databinding.ActivitySignUpBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.FirebaseDatabase
+import kotlinx.android.synthetic.main.activity_login.*
 
 class SignUp : AppCompatActivity() {
     private lateinit var binding: ActivitySignUpBinding
@@ -21,7 +23,7 @@ class SignUp : AppCompatActivity() {
     lateinit var txtPasswordCreate: EditText
     lateinit var txtUsernameCreate: EditText
     lateinit var layout_constraint_Submit: ConstraintLayout
-    lateinit var txtLogin : TextView
+    lateinit var textLogin : TextView
     lateinit var email: String
     lateinit var password: String
     lateinit var username:String
@@ -35,10 +37,10 @@ class SignUp : AppCompatActivity() {
         setContentView(binding.root)
 
         txtEmailCreate = findViewById<EditText>(R.id.txtEmailCreate)
-        txtPasswordCreate = findViewById<EditText>(R.id.txtPasswordCreatet)
+        txtPasswordCreate = findViewById<EditText>(R.id.txtPassword)
         layout_constraint_Submit = findViewById<ConstraintLayout>(R.id.layout_constraint_Submit)
         txtUsernameCreate = findViewById<EditText>(R.id.txtUsernameCreate)
-        txtLogin = findViewById<TextView>(R.id.txtLogin)
+        textLogin = findViewById<TextView>(R.id.txtLogin)
 
         mAuth = FirebaseAuth.getInstance()
         database = FirebaseDatabase.getInstance("https://foodapp-f4fe4-default-rtdb.asia-southeast1.firebasedatabase.app")
@@ -49,7 +51,7 @@ class SignUp : AppCompatActivity() {
 
         }
 
-        txtLogin.setOnClickListener{
+        textLogin.setOnClickListener{
             val gotoLogin = Intent(this,Login::class.java)
             startActivity(gotoLogin)
         }
@@ -72,7 +74,7 @@ class SignUp : AppCompatActivity() {
         //get data
         username = binding.txtUsernameCreate.text.toString().trim()
         email = binding.txtEmailCreate.text.toString().trim()
-        password = binding.txtPasswordCreatet.text.toString().trim()
+        password = binding.txtPassword.text.toString().trim()
 
         //validate data
         if (TextUtils.isEmpty(username)){
@@ -85,7 +87,7 @@ class SignUp : AppCompatActivity() {
         }
         else if (TextUtils.isEmpty(password)){
             //no password entered
-            binding.txtPasswordCreatet.error = "Please enter password"
+            binding.txtPassword.error = "Please enter password"
         }
         else{
             //data is validate, begin login
@@ -134,4 +136,5 @@ class SignUp : AppCompatActivity() {
     }
 
 }
+
 

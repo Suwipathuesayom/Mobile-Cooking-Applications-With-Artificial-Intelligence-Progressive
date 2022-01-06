@@ -11,6 +11,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.myfoodlab.databinding.ActivityLoginBinding
+import com.example.myfoodlab.ui.home.HomeMenuFragment
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 
@@ -27,6 +28,7 @@ class Login: AppCompatActivity() {
     lateinit var txtForgotPassword: TextView
     lateinit var layout_constraint_Facebook: ConstraintLayout
     lateinit var layout_constraint_Google: ConstraintLayout
+    lateinit var txtSkip_Login : TextView
 
     private lateinit var mAuth: FirebaseAuth
 
@@ -44,15 +46,14 @@ class Login: AppCompatActivity() {
         layout_constraint_Login = findViewById <ConstraintLayout>(R.id.layout_constraint_Login)
         txtSignUp = findViewById<TextView>(R.id.txtSignUp)
         txtForgotPassword =  findViewById<TextView>(R.id.txtForgotPassword)
-        layout_constraint_Facebook = findViewById <ConstraintLayout>(R.id.layout_constraint_Facebook)
-        layout_constraint_Google = findViewById<ConstraintLayout>(R.id.layout_constraint_Google)
+        txtSkip_Login = findViewById <TextView>(R.id.txtSkip_Login)
 
         mAuth = FirebaseAuth.getInstance()
 
 
 
         //เปลี่ยนหน้าไปหน้าสมัคร
-        txtSignUp!!.setOnClickListener {
+        txtSignUp.setOnClickListener {
 
             val intent = Intent(this,SignUp::class.java)
             startActivity(intent)
@@ -60,25 +61,20 @@ class Login: AppCompatActivity() {
 
 
 
-        txtForgotPassword!!.setOnClickListener{
+        txtForgotPassword.setOnClickListener{
             val gotoForget = Intent(this,ForgotPassword::class.java)
             startActivity(gotoForget)
         }
 
-        layout_constraint_Login!!.setOnClickListener {
+        layout_constraint_Login.setOnClickListener {
             validateData()
+            /* val gotoMainMenu = Intent(this,MainMenu::class.java)
+             startActivity(gotoMainMenu)*/
         }
 
-
-        layout_constraint_Facebook!!.setOnClickListener {
-            val gotoFillter_Select = Intent(this, Fillter_Select::class.java)
-            startActivity(gotoFillter_Select)
-        }
-
-
-        layout_constraint_Google!!.setOnClickListener {
-            val gotoLogout = Intent(this, Logout::class.java)
-            startActivity(gotoLogout)
+        txtSkip_Login.setOnClickListener {
+            val gotoMainMenu = Intent(this, HomeMenuFragment::class.java)
+            startActivity(gotoMainMenu)
         }
 
 
@@ -87,7 +83,7 @@ class Login: AppCompatActivity() {
 
     override fun onStart(){
         super.onStart()
-        val currentUser = mAuth!!.currentUser
+        val currentUser = mAuth.currentUser
         updateUI(currentUser)
 
 
@@ -118,13 +114,13 @@ class Login: AppCompatActivity() {
     }
 
     private fun loginEmail() {
-        email = txtEmailAddress!!.text.toString()
-        password = txtPassword!!.text.toString()
+        email = txtEmailAddress.text.toString()
+        password = txtPassword.text.toString()
 
-        mAuth!!.signInWithEmailAndPassword(email, password).addOnCompleteListener(this) {
+        mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(this) {
                 task -> if (task.isSuccessful){
             Log.d("My App","Create New User Success!")
-            val user = mAuth!!.currentUser
+            val user = mAuth.currentUser
             updateUI(user)
         }
         else{
@@ -144,7 +140,7 @@ class Login: AppCompatActivity() {
             val uid = user.uid
             val email = user.email
             Toast.makeText(this@Login,"Welcome: $email your ID is: $uid", Toast.LENGTH_SHORT).show()
-            val intenSession = Intent(this, ListActivity::class.java)
+            val intenSession = Intent(this, HomeMenuFragment::class.java)
             startActivity(intenSession)
         }
     }

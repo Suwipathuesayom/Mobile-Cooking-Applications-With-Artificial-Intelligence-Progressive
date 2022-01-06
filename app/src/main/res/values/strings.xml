@@ -1,5 +1,17 @@
 <resources>
-    <string name="app_name">myfoodlab</string>
+    <string name="app_name" translatable="true">Foodlab</string>
     <string name="defult_web_client_id" translatable="false">859988268842-rv2lhngk00hovu3kanf6v940baq3aekl.apps.googleusercontent.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--Dropdown item -->
+
+    <string-array name="Randomfood">
+        <item>ต้ม</item>
+        <item>ผัด</item>
+        <item>ทอด</item>
+        <item>อาหารจานเดียว</item>
+        <item>ของทานเล่น</item>
+    </string-array>
+
 </resources>

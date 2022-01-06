@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_mainmenu"
+    tools:context=".ui.italianfood.ItalianFoodFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/scan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/semib"
+        android:text="Hello, Jeev jobs"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.167"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_search_italianfood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView41">
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/search_view"
+            android:iconifiedByDefault="false"
+            android:queryBackground="@drawable/transparent_search"
+            android:queryHint="What you wanna eat today ?..">
+
+        </SearchView>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/transparent_search"
+        android:backgroundTint="#85FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight="592dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_search_italianfood"
+        app:layout_constraintWidth="359dp">
+
+        <androidx.core.widget.NestedScrollView
+            orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:overScrollMode="never"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/semib"
+                    android:text="Italian Food"
+                    android:textColor="#3F414E"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/spaghetticarbonara"
+                    android:layout_width="300dp"
+                    android:layout_height="175dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:backgroundTint="#FFFFFF"
+                    app:cardCornerRadius="17dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView43">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout4"
+                            android:layout_width="79dp"
+                            android:layout_height="5dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/button_facebook"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+                        <TextView
+                            android:id="@+id/textView46"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/poppinslight"
+                            android:text="สปาเก็ตตี้คาโบนาร่า"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView72"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Calories"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
+                        <TextView
+                            android:id="@+id/textView91"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/regular"
+                            android:text="460 kcal"
+                            android:textColor="#4F4F4F"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView72"
+                            app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
+                        <TextView
+                            android:id="@+id/textView126"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Ingredient "
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView72" />
+
+                        <TextView
+                            android:id="@+id/textView127"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/regular"
+                            android:text="7"
+                            android:textColor="#4F4F4F"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView126"
+                            app:layout_constraintTop_toBottomOf="@+id/textView91" />
+
+                        <TextView
+                            android:id="@+id/textView128"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Howto"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView126" />
+
+                        <TextView
+                            android:id="@+id/textView129"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/regular"
+                            android:text="นำแฮมหรือเบคอนมาหั่นเป็นชิ้นขนาดตามต้องการ"
+                            android:textColor="#4F4F4F"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView128"
+                            app:layout_constraintTop_toBottomOf="@+id/textView127" />
+
+                        <TextView
+                            android:id="@+id/textView130"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:fontFamily="@font/regular"
+                            android:text="นำไข่ไก่สดมาแยกไข่แดงออกจากไข่ขาว"
+                            android:textColor="#4F4F4F"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView128"
+                            app:layout_constraintTop_toBottomOf="@+id/textView129" />
+
+                        <TextView
+                            android:id="@+id/textView131"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="48dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Read More"
+                            android:textColor="#828282"
+                            android:textSize="8sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView130" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="92dp"
+                    android:layout_height="92dp"
+                    android:layout_marginBottom="100dp"
+                    app:cardCornerRadius="17dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/spaghetticarbonara"
+                    app:layout_constraintEnd_toEndOf="@+id/spaghetticarbonara">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="92dp"
+                        android:layout_height="92dp"
+                        android:src="@drawable/spaghetticarbonara" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/spaghettimeatballs"
+                    android:layout_width="300dp"
+                    android:layout_height="175dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="32dp"
+                    android:backgroundTint="#FFFFFF"
+                    app:cardCornerRadius="17dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spaghetticarbonara">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout5"
+                            android:layout_width="79dp"
+                            android:layout_height="5dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/button_facebook"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView133" />
+
+                        <TextView
+                            android:id="@+id/textView133"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/poppinslight"
+                            android:text="สปาเก็ตตี้มีทบอล"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView134"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Calories"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+
+                        <TextView
+                            android:id="@+id/textView135"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/regular"
+                            android:text="350 kcal"
+                            android:textColor="#4F4F4F"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView134"
+                            app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+
+                        <TextView
+                            android:id="@+id/textView136"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Ingredient "
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView134" />
+
+                        <TextView
+                            android:id="@+id/textView137"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/regular"
+                            android:text="7"
+                            android:textColor="#4F4F4F"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView136"
+                            app:layout_constraintTop_toBottomOf="@+id/textView135" />
+
+                        <TextView
+                            android:id="@+id/textView138"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Howto"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView136" />
+
+                        <TextView
+                            android:id="@+id/textView139"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/regular"
+                            android:text="ใส่เนื้อบด ไข่ เกลือป่น พริกไทยป่น แป้งทั้ง 2 ชนิด"
+                            android:textColor="#4F4F4F"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView138"
+                            app:layout_constraintTop_toBottomOf="@+id/textView137" />
+
+                        <TextView
+                            android:id="@+id/textView140"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:fontFamily="@font/regular"
+                            android:text="ใบออริกาโน และน้ำเปล่าลงในอ่างผสม"
+                            android:textColor="#4F4F4F"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView138"
+                            app:layout_constraintTop_toBottomOf="@+id/textView139" />
+
+                        <TextView
+                            android:id="@+id/textView141"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="48dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Read More"
+                            android:textColor="#828282"
+                            android:textSize="8sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView140" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="92dp"
+                    android:layout_height="92dp"
+                    android:layout_marginBottom="100dp"
+                    app:cardCornerRadius="17dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/spaghettimeatballs"
+                    app:layout_constraintEnd_toEndOf="@+id/spaghettimeatballs">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="92dp"
+                        android:layout_height="92dp"
+                        android:src="@drawable/spaghettimeatballs" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/lasagna"
+                    android:layout_width="300dp"
+                    android:layout_height="175dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="32dp"
+                    android:backgroundTint="#FFFFFF"
+                    app:cardCornerRadius="17dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spaghettimeatballs">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout6"
+                            android:layout_width="79dp"
+                            android:layout_height="5dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/button_facebook"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView142" />
+
+                        <TextView
+                            android:id="@+id/textView142"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/poppinslight"
+                            android:text="ลาซานญ่า"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView143"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Calories"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/constraintLayout6" />
+
+                        <TextView
+                            android:id="@+id/textView144"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/regular"
+                            android:text="400 kcal"
+                            android:textColor="#4F4F4F"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView143"
+                            app:layout_constraintTop_toBottomOf="@+id/constraintLayout6" />
+
+                        <TextView
+                            android:id="@+id/textView145"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Ingredient "
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView143" />
+
+                        <TextView
+                            android:id="@+id/textView147"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/regular"
+                            android:text="15"
+                            android:textColor="#4F4F4F"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView145"
+                            app:layout_constraintTop_toBottomOf="@+id/textView144" />
+
+                        <TextView
+                            android:id="@+id/textView148"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Howto"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView145" />
+
+                        <TextView
+                            android:id="@+id/textView149"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/regular"
+                            android:text="แบ่งเนยเก็บไว้สองช้อนโต๊ะเตรียมแป้งลูโดยผัดเนย"
+                            android:textColor="#4F4F4F"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView148"
+                            app:layout_constraintTop_toBottomOf="@+id/textView147" />
+
+                        <TextView
+                            android:id="@+id/textView150"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:fontFamily="@font/regular"
+                            android:text="ที่ เหลือกับแป้งสาลีเข้าด้วยกันด้วยไฟกลางจนแป้ง"
+                            android:textColor="#4F4F4F"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView148"
+                            app:layout_constraintTop_toBottomOf="@+id/textView149" />
+
+                        <TextView
+                            android:id="@+id/textView151"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="85dp"
+                            android:fontFamily="@font/regular"
+                            android:text="สุก"
+                            android:textColor="#4F4F4F"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView150" />
+
+                        <TextView
+                            android:id="@+id/textView152"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="48dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Read More"
+                            android:textColor="#828282"
+                            android:textSize="8sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView150" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="92dp"
+                    android:layout_height="92dp"
+                    android:layout_marginBottom="100dp"
+                    app:cardCornerRadius="17dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/lasagna"
+                    app:layout_constraintEnd_toEndOf="@+id/lasagna">
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="92dp"
+                        android:layout_height="92dp"
+                        android:src="@drawable/lasagna" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/margaritapizza"
+                    android:layout_width="300dp"
+                    android:layout_height="175dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="32dp"
+                    android:backgroundTint="#FFFFFF"
+                    app:cardCornerRadius="17dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lasagna">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout7"
+                            android:layout_width="79dp"
+                            android:layout_height="5dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/button_facebook"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView153" />
+
+                        <TextView
+                            android:id="@+id/textView153"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/poppinslight"
+                            android:text="มาการิต้าพิซซ่า"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView154"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Calories"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/constraintLayout7" />
+
+                        <TextView
+                            android:id="@+id/textView155"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/regular"
+                            android:text="1200 kcal"
+                            android:textColor="#4F4F4F"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView154"
+                            app:layout_constraintTop_toBottomOf="@+id/constraintLayout7" />
+
+                        <TextView
+                            android:id="@+id/textView156"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Ingredient "
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView154" />
+
+                        <TextView
+                            android:id="@+id/textView157"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/regular"
+                            android:text="8"
+                            android:textColor="#4F4F4F"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView156"
+                            app:layout_constraintTop_toBottomOf="@+id/textView155" />
+
+                        <TextView
+                            android:id="@+id/textView158"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Howto"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView156" />
+
+                        <TextView
+                            android:id="@+id/textView159"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/regular"
+                            android:text="เตรียมตู้อบให้มีความร้อน 450 องศาฟาเรนไฮต์ "
+                            android:textColor="#4F4F4F"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView158"
+                            app:layout_constraintTop_toBottomOf="@+id/textView157" />
+
+                        <TextView
+                            android:id="@+id/textView161"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:fontFamily="@font/regular"
+                            android:text="ทาน้ำมันมะกอกบนแป้งพิซซ่า และใช้แปรงทารอบๆ"
+                            android:textColor="#4F4F4F"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView158"
+                            app:layout_constraintTop_toBottomOf="@+id/textView159" />
+
+                        <TextView
+                            android:id="@+id/textView162"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="48dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Read More"
+                            android:textColor="#828282"
+                            android:textSize="8sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView161" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="92dp"
+                    android:layout_height="92dp"
+                    android:layout_marginBottom="100dp"
+                    app:cardCornerRadius="17dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/margaritapizza"
+                    app:layout_constraintEnd_toEndOf="@+id/margaritapizza">
+
+                    <ImageView
+                        android:id="@+id/imageView19"
+                        android:layout_width="92dp"
+                        android:layout_height="92dp"
+                        android:src="@drawable/margaritapizza" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/risotto"
+                    android:layout_width="300dp"
+                    android:layout_height="175dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="32dp"
+                    android:backgroundTint="#FFFFFF"
+                    app:cardCornerRadius="17dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/margaritapizza">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout8"
+                            android:layout_width="79dp"
+                            android:layout_height="5dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/button_facebook"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView163" />
+
+                        <TextView
+                            android:id="@+id/textView163"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/poppinslight"
+                            android:text="รีซอตโต้"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView164"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Calories"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/constraintLayout8" />
+
+                        <TextView
+                            android:id="@+id/textView165"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/regular"
+                            android:text="400 kcal"
+                            android:textColor="#4F4F4F"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView164"
+                            app:layout_constraintTop_toBottomOf="@+id/constraintLayout8" />
+
+                        <TextView
+                            android:id="@+id/textView166"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Ingredient "
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView164" />
+
+                        <TextView
+                            android:id="@+id/textView167"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/regular"
+                            android:text="7"
+                            android:textColor="#4F4F4F"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView166"
+                            app:layout_constraintTop_toBottomOf="@+id/textView165" />
+
+                        <TextView
+                            android:id="@+id/textView168"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Howto"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView166" />
+
+                        <TextView
+                            android:id="@+id/textView169"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/regular"
+                            android:text="ผัดหอมหัวใหญ่ในน้ำมันมะกอกให้นิ่มด้วยไฟอ่อน"
+                            android:textColor="#4F4F4F"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView168"
+                            app:layout_constraintTop_toBottomOf="@+id/textView167" />
+
+                        <TextView
+                            android:id="@+id/textView170"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:fontFamily="@font/regular"
+                            android:text=" ลงข้าวมาผัดต่อ คลุกเคล้าให้ข้าวมันวาว"
+                            android:textColor="#4F4F4F"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView168"
+                            app:layout_constraintTop_toBottomOf="@+id/textView169" />
+
+                        <TextView
+                            android:id="@+id/textView171"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="48dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Read More"
+                            android:textColor="#828282"
+                            android:textSize="8sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView170" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="92dp"
+                    android:layout_height="92dp"
+                    android:layout_marginBottom="100dp"
+                    app:cardCornerRadius="17dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/risotto"
+                    app:layout_constraintEnd_toEndOf="@+id/risotto">
+
+                    <ImageView
+                        android:id="@+id/imageView21"
+                        android:layout_width="92dp"
+                        android:layout_height="92dp"
+                        android:src="@drawable/risotto" />
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
