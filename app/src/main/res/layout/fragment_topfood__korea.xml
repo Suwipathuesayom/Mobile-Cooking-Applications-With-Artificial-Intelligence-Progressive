@@ -1,0 +1,1263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_mainmenu"
+    tools:context=".ui.topfood_korea.Topfood_KoreaFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView64"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/scan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/button_topfood_korea"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView64"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView81"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/iconssearch" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/semib"
+        android:text="Hello, Jeev jobs"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.167"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/transparent_search"
+        android:backgroundTint="#85FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight="592dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27"
+        app:layout_constraintWidth="359dp">
+
+        <androidx.core.widget.NestedScrollView
+            orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:overScrollMode="never"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView80"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/semib"
+                        android:text="Suggetion"
+                        android:textColor="#3F414E"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView65"
+                        android:layout_width="300dp"
+                        android:layout_height="175dp"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/menukorean"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView80" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/tuckalby"
+                        android:layout_width="300dp"
+                        android:layout_height="175dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="32dp"
+                        android:backgroundTint="#FFFFFF"
+                        app:cardCornerRadius="17dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView65">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/constraintLayout4"
+                                android:layout_width="79dp"
+                                android:layout_height="5dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/button_facebook"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView220" />
+
+                            <TextView
+                                android:id="@+id/textView220"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="ทักคาลบิ"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/textView221"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Calories"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
+                            <TextView
+                                android:id="@+id/textView222"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/regular"
+                                android:text="330 kcal"
+                                android:textColor="#4F4F4F"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toEndOf="@+id/textView221"
+                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
+                            <TextView
+                                android:id="@+id/textView223"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Ingredient "
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView221" />
+
+                            <TextView
+                                android:id="@+id/textView224"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/regular"
+                                android:text="18"
+                                android:textColor="#4F4F4F"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toEndOf="@+id/textView223"
+                                app:layout_constraintTop_toBottomOf="@+id/textView222" />
+
+                            <com.google.android.material.chip.ChipGroup
+                                android:id="@+id/chipGroup21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="80dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView224">
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip70"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="เนื้อไก่"
+                                    android:textColor="#000000"
+                                    android:textSize="9sp" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip71"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="แป้งต๊อก"
+                                    android:textColor="#000000"
+                                    android:textSize="9sp" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip72"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="โคชูจัง"
+                                    android:textColor="#000000"
+                                    android:textSize="9sp" />
+                            </com.google.android.material.chip.ChipGroup>
+
+                            <TextView
+                                android:id="@+id/textView228"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="32dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Read More"
+                                android:textColor="#828282"
+                                android:textSize="8sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/chipGroup21" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView5"
+                        android:layout_width="92dp"
+                        android:layout_height="92dp"
+                        android:layout_marginBottom="100dp"
+                        app:cardCornerRadius="17dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/tuckalby"
+                        app:layout_constraintEnd_toEndOf="@+id/tuckalby">
+
+                        <ImageView
+                            android:id="@+id/imageView66"
+                            android:layout_width="92dp"
+                            android:layout_height="92dp"
+                            android:src="@drawable/tuckalby" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/koreancoldnoodles"
+                        android:layout_width="300dp"
+                        android:layout_height="175dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="32dp"
+                        android:backgroundTint="#FFFFFF"
+                        app:cardCornerRadius="17dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tuckalby">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/constraintLayout5"
+                                android:layout_width="79dp"
+                                android:layout_height="5dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/button_facebook"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView130" />
+
+                            <TextView
+                                android:id="@+id/textView130"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="หมี่เย็นเกาหลี"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/textView138"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Calories"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+
+                            <TextView
+                                android:id="@+id/textView139"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/regular"
+                                android:text="527 kcal"
+                                android:textColor="#4F4F4F"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toEndOf="@+id/textView138"
+                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+
+                            <TextView
+                                android:id="@+id/textView140"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Ingredient "
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView138" />
+
+                            <TextView
+                                android:id="@+id/textView148"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/regular"
+                                android:text="11"
+                                android:textColor="#4F4F4F"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toEndOf="@+id/textView140"
+                                app:layout_constraintTop_toBottomOf="@+id/textView139" />
+
+                            <com.google.android.material.chip.ChipGroup
+                                android:id="@+id/chipGroup36"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="80dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView148">
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip118"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="บะหมี่เย็น"
+                                    android:textColor="#000000"
+                                    android:textSize="9sp" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip119"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="น้ำแอปเปิ้ล"
+                                    android:textColor="#000000"
+                                    android:textSize="9sp" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip120"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="น้ำส้มสายชู"
+                                    android:textColor="#000000"
+                                    android:textSize="9sp" />
+                            </com.google.android.material.chip.ChipGroup>
+
+                            <TextView
+                                android:id="@+id/textView149"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="32dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Read More"
+                                android:textColor="#828282"
+                                android:textSize="8sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/chipGroup36" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="92dp"
+                        android:layout_height="92dp"
+                        android:layout_marginBottom="100dp"
+                        app:cardCornerRadius="17dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/koreancoldnoodles"
+                        app:layout_constraintEnd_toEndOf="@+id/koreancoldnoodles">
+
+                        <ImageView
+                            android:id="@+id/imageView67"
+                            android:layout_width="92dp"
+                            android:layout_height="92dp"
+                            android:src="@drawable/koreancoldnoodles" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/soysaucepickledshrimp"
+                        android:layout_width="300dp"
+                        android:layout_height="175dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="32dp"
+                        android:backgroundTint="#FFFFFF"
+                        app:cardCornerRadius="17dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/koreancoldnoodles">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/constraintLayout6"
+                                android:layout_width="79dp"
+                                android:layout_height="5dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/button_facebook"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView150" />
+
+                            <TextView
+                                android:id="@+id/textView150"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="กุ้งดองซีอิ๊วสูตรเกาหลี"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/textView151"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Calories"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout6" />
+
+                            <TextView
+                                android:id="@+id/textView158"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/regular"
+                                android:text="90 kcal"
+                                android:textColor="#4F4F4F"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toEndOf="@+id/textView151"
+                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout6" />
+
+                            <TextView
+                                android:id="@+id/textView159"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Ingredient "
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView151" />
+
+                            <TextView
+                                android:id="@+id/textView161"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/regular"
+                                android:text="9"
+                                android:textColor="#4F4F4F"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toEndOf="@+id/textView159"
+                                app:layout_constraintTop_toBottomOf="@+id/textView158" />
+
+                            <com.google.android.material.chip.ChipGroup
+                                android:id="@+id/chipGroup37"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="60dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView161">
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip121"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="กุ้งขาว"
+                                    android:textColor="#000000"
+                                    android:textSize="9sp" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip122"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="มิริน"
+                                    android:textColor="#000000"
+                                    android:textSize="9sp" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip123"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="โชยุ"
+                                    android:textColor="#000000"
+                                    android:textSize="9sp" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip124"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="พริกจินดา"
+                                    android:textColor="#000000"
+                                    android:textSize="9sp" />
+
+                            </com.google.android.material.chip.ChipGroup>
+
+                            <TextView
+                                android:id="@+id/textView168"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="32dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Read More"
+                                android:textColor="#828282"
+                                android:textSize="8sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/chipGroup37" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView6"
+                        android:layout_width="92dp"
+                        android:layout_height="92dp"
+                        android:layout_marginBottom="100dp"
+                        app:cardCornerRadius="17dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/soysaucepickledshrimp"
+                        app:layout_constraintEnd_toEndOf="@+id/soysaucepickledshrimp">
+
+                        <ImageView
+                            android:id="@+id/imageView68"
+                            android:layout_width="92dp"
+                            android:layout_height="92dp"
+                            android:src="@drawable/koreansoysauce" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/pickledsalmon"
+                        android:layout_width="300dp"
+                        android:layout_height="175dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="32dp"
+                        android:backgroundTint="#FFFFFF"
+                        app:cardCornerRadius="17dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/soysaucepickledshrimp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/constraintLayout7"
+                                android:layout_width="79dp"
+                                android:layout_height="5dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/button_facebook"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView169" />
+
+                            <TextView
+                                android:id="@+id/textView169"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="แซลม่อนดอง"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/textView170"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Calories"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout7" />
+
+                            <TextView
+                                android:id="@+id/textView176"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/regular"
+                                android:text="136 kcal"
+                                android:textColor="#4F4F4F"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toEndOf="@+id/textView170"
+                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout7" />
+
+                            <TextView
+                                android:id="@+id/textView177"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Ingredient "
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView170" />
+
+                            <TextView
+                                android:id="@+id/textView178"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/regular"
+                                android:text="10"
+                                android:textColor="#4F4F4F"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toEndOf="@+id/textView177"
+                                app:layout_constraintTop_toBottomOf="@+id/textView176" />
+
+                            <com.google.android.material.chip.ChipGroup
+                                android:id="@+id/chipGroup38"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="52dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView178">
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip125"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="แซลม่อนซาชิมิ"
+                                    android:textColor="#000000"
+                                    android:textSize="9sp" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip126"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="โชยุ"
+                                    android:textColor="#000000"
+                                    android:textSize="9sp" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip127"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="พริก"
+                                    android:textColor="#000000"
+                                    android:textSize="9sp" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip128"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="งา"
+                                    android:textColor="#000000"
+                                    android:textSize="9sp" />
+                            </com.google.android.material.chip.ChipGroup>
+
+                            <TextView
+                                android:id="@+id/textView185"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="32dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Read More"
+                                android:textColor="#828282"
+                                android:textSize="8sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/chipGroup38" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="92dp"
+                        android:layout_height="92dp"
+                        android:layout_marginBottom="100dp"
+                        app:cardCornerRadius="17dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/pickledsalmon"
+                        app:layout_constraintEnd_toEndOf="@+id/pickledsalmon">
+
+                        <ImageView
+                            android:id="@+id/imageView69"
+                            android:layout_width="92dp"
+                            android:layout_height="92dp"
+                            android:src="@drawable/pickledsalmon" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/friedporkkimchi"
+                        android:layout_width="300dp"
+                        android:layout_height="175dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="32dp"
+                        android:backgroundTint="#FFFFFF"
+                        app:cardCornerRadius="17dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/pickledsalmon">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/constraintLayout8"
+                                android:layout_width="79dp"
+                                android:layout_height="5dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/button_facebook"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView186" />
+
+                            <TextView
+                                android:id="@+id/textView186"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="หมูผัดกิมจิ"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/textView187"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Calories"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout8" />
+
+                            <TextView
+                                android:id="@+id/textView194"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/regular"
+                                android:text="1395 kcal"
+                                android:textColor="#4F4F4F"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toEndOf="@+id/textView187"
+                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout8" />
+
+                            <TextView
+                                android:id="@+id/textView195"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Ingredient "
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView187" />
+
+                            <TextView
+                                android:id="@+id/textView196"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/regular"
+                                android:text="9"
+                                android:textColor="#4F4F4F"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toEndOf="@+id/textView195"
+                                app:layout_constraintTop_toBottomOf="@+id/textView194" />
+
+                            <com.google.android.material.chip.ChipGroup
+                                android:id="@+id/chipGroup39"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="72dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView196">
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip129"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="โคชูจัง"
+                                    android:textColor="#000000"
+                                    android:textSize="9sp" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip130"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="เนื้อหมู"
+                                    android:textColor="#000000"
+                                    android:textSize="9sp" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip131"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="กิมจิ"
+                                    android:textColor="#000000"
+                                    android:textSize="9sp" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip132"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="งา"
+                                    android:textColor="#000000"
+                                    android:textSize="9sp" />
+                            </com.google.android.material.chip.ChipGroup>
+
+                            <TextView
+                                android:id="@+id/textView203"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="32dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Read More"
+                                android:textColor="#828282"
+                                android:textSize="8sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/chipGroup39" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="92dp"
+                        android:layout_height="92dp"
+                        android:layout_marginBottom="100dp"
+                        app:cardCornerRadius="17dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/friedporkkimchi"
+                        app:layout_constraintEnd_toEndOf="@+id/friedporkkimchi">
+
+                        <ImageView
+                            android:id="@+id/imageView70"
+                            android:layout_width="92dp"
+                            android:layout_height="92dp"
+                            android:src="@drawable/friedporkkimchi" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/koreanfriedchicken"
+                        android:layout_width="300dp"
+                        android:layout_height="175dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="32dp"
+                        android:backgroundTint="#FFFFFF"
+                        app:cardCornerRadius="17dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/friedporkkimchi">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/constraintLayout9"
+                                android:layout_width="79dp"
+                                android:layout_height="5dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/button_facebook"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView204" />
+
+                            <TextView
+                                android:id="@+id/textView204"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="ไก่ทอดเกาหลี"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/textView205"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Calories"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout9" />
+
+                            <TextView
+                                android:id="@+id/textView212"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/regular"
+                                android:text="292 kcal"
+                                android:textColor="#4F4F4F"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toEndOf="@+id/textView205"
+                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout9" />
+
+                            <TextView
+                                android:id="@+id/textView213"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Ingredient "
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView205" />
+
+                            <TextView
+                                android:id="@+id/textView214"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/regular"
+                                android:text="17"
+                                android:textColor="#4F4F4F"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toEndOf="@+id/textView213"
+                                app:layout_constraintTop_toBottomOf="@+id/textView212" />
+
+                            <com.google.android.material.chip.ChipGroup
+                                android:id="@+id/chipGroup40"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="80dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView214">
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip133"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="โคชูจัง"
+                                    android:textColor="#000000"
+                                    android:textSize="9sp" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip134"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="ปีกไก่"
+                                    android:textColor="#000000"
+                                    android:textSize="9sp" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip135"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="แป้งทอด"
+                                    android:textColor="#000000"
+                                    android:textSize="9sp" />
+
+                            </com.google.android.material.chip.ChipGroup>
+
+                            <TextView
+                                android:id="@+id/textView225"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="32dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Read More"
+                                android:textColor="#828282"
+                                android:textSize="8sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/chipGroup40" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="92dp"
+                        android:layout_height="92dp"
+                        android:layout_marginBottom="100dp"
+                        app:cardCornerRadius="17dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/koreanfriedchicken"
+                        app:layout_constraintEnd_toEndOf="@+id/koreanfriedchicken">
+
+                        <ImageView
+                            android:id="@+id/imageView71"
+                            android:layout_width="92dp"
+                            android:layout_height="92dp"
+                            android:src="@drawable/koreanfriedchicken" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/porkoverrice"
+                        android:layout_width="300dp"
+                        android:layout_height="175dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginBottom="32dp"
+                        android:backgroundTint="#FFFFFF"
+                        app:cardCornerRadius="17dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/koreanfriedchicken">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/constraintLayout10"
+                                android:layout_width="79dp"
+                                android:layout_height="5dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/button_facebook"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView226" />
+
+                            <TextView
+                                android:id="@+id/textView226"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="ข้าวหน้าหมูเกาหลี"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/textView227"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Calories"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout10" />
+
+                            <TextView
+                                android:id="@+id/textView234"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/regular"
+                                android:text="329 kcal"
+                                android:textColor="#4F4F4F"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toEndOf="@+id/textView227"
+                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout10" />
+
+                            <TextView
+                                android:id="@+id/textView235"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Ingredient "
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView227" />
+
+                            <TextView
+                                android:id="@+id/textView236"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/regular"
+                                android:text="11"
+                                android:textColor="#4F4F4F"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toEndOf="@+id/textView235"
+                                app:layout_constraintTop_toBottomOf="@+id/textView234" />
+
+                            <com.google.android.material.chip.ChipGroup
+                                android:id="@+id/chipGroup41"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="80dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView236">
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip136"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="ซีอิ๊ว"
+                                    android:textColor="#000000"
+                                    android:textSize="9sp" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip137"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="หมู"
+                                    android:textColor="#000000"
+                                    android:textSize="9sp" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip138"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:text="เหล้าจีน"
+                                    android:textColor="#000000"
+                                    android:textSize="9sp" />
+                            </com.google.android.material.chip.ChipGroup>
+
+                            <TextView
+                                android:id="@+id/textView244"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="32dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Read More"
+                                android:textColor="#828282"
+                                android:textSize="8sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/chipGroup41" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="92dp"
+                        android:layout_height="92dp"
+                        android:layout_marginBottom="100dp"
+                        app:cardCornerRadius="17dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/porkoverrice"
+                        app:layout_constraintEnd_toEndOf="@+id/porkoverrice">
+
+                        <ImageView
+                            android:id="@+id/imageView72"
+                            android:layout_width="92dp"
+                            android:layout_height="92dp"
+                            android:src="@drawable/porkoverricemoo" />
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

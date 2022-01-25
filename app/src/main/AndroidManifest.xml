@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.myfoodlab" >
+    package="com.example.myfoodlab">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -10,7 +10,22 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_foodlab"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Myfoodlab" >
+        android:theme="@style/Theme.Myfoodlab">
+        <activity
+            android:name=".CardMenu_SweetandSour"
+            android:exported="false" />
+        <activity
+            android:name=".CardMenu_PoachedEggs"
+            android:exported="false" />
+        <activity
+            android:name=".CardMenu_Jumokbab"
+            android:exported="false" />
+        <activity
+            android:name=".CardMenu_Spaghetti_Carbonara"
+            android:exported="false" />
+        <activity
+            android:name=".CardMenu_Tomyumkung"
+            android:exported="false" />
         <activity
             android:name=".Spash"
             android:exported="false" />
@@ -20,7 +35,7 @@
         <activity
             android:name=".WelcomeSignup"
             android:exported="true"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

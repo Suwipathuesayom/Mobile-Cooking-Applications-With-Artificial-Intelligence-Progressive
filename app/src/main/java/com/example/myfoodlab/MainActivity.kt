@@ -4,10 +4,12 @@ package com.example.myfoodlab
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import com.example.myfoodlab.ui.fillter.FillterFragment
 import com.example.myfoodlab.ui.home.HomeMenuFragment
 import com.example.myfoodlab.ui.logout.LogoutFragment
 import com.example.myfoodlab.ui.random.RandomFragment
+import com.example.myfoodlab.ui.thaifood.ThaifoodFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity  : AppCompatActivity(){
@@ -26,9 +28,9 @@ class MainActivity  : AppCompatActivity(){
 
         bottom_navigation.setOnItemSelectedListener {
             when (it.itemId) {
-                R.id.menu -> makeCurrentFragment(homeMenuFragment)
                 R.id.filter -> makeCurrentFragment(fillterFragment)
                 R.id.random -> makeCurrentFragment(randomFragment)
+                R.id.menu -> makeCurrentFragment(homeMenuFragment)
                 R.id.profile -> makeCurrentFragment(logoutFragment)
             }
             true
